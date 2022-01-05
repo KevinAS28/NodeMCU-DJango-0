@@ -12,10 +12,17 @@ import nodemcu0.models as models0
 def audit_record(request):
     data = json.loads(request.body)
     ar = data['audit']
-
     models0.AuditRecord(**ar).save()
     return JsonResponse({'success': True})
 
-def get_audit(request):
-    audit_records_data = [model_to_dict(i) for i in models0.AuditRecord.objects.all()]
+def get_records(request):
+    data = json.loads(request.body)
+
+    if 'limit' in data:
+        limit = int(data['limit'])
+        queryset = models0.AuditRecord.objects.all().order_by('-timestamp')[:limit]
+    else:
+        queryset = models0.AuditRecord.objects.all()
+
+    audit_records_data = [model_to_dict(i) for i in queryset]
     return JsonResponse({'audit': audit_records_data})

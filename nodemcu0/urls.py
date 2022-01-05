@@ -7,5 +7,5 @@ app_name = 'nodemcu0'
 
 urlpatterns = [ 
     path('audit_record', audit_record),
-    path('get_all_records', get_audit)
+    path('get_records', get_records)
 ]
