@@ -125,4 +125,4 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-SERVER_HOST = '10.42.0.1'
+SERVER_HOST = 'iot0.herokuapp.com'
