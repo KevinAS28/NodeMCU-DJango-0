@@ -31,6 +31,8 @@ ALLOWED_HOSTS = ['*']
 
 # Application definition
 
+WEB_APPS = ['nodemcu0']
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -38,8 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'nodemcu0'
+    
 ]
+
+INSTALLED_APPS.extend(WEB_APPS)
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -56,7 +61,7 @@ ROOT_URLCONF = 'IOT0.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, app, 'templates') for app in WEB_APPS],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

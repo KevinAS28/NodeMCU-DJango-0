@@ -1,0 +1,52 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    <h3 class="text-center">Multi LED Switch</h3>
+    <hr>
+    <div class="col-xs-12">
+        <p class="lead">Device ID sementara biarkan default</p>
+        <p class="lead">Ceklis untuk switch (ON/OFF) LED</p>    
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-4">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Input</div>
+            
+                <form method="POST">
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        Device ID: <input type="text" name="device_id" value="NODMC0"/>
+                    </li>
+                </ul>
+                
+                <!-- List group -->
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        LED merah
+                        <div class="material-switch pull-right">
+                            <input  name="led0" type="checkbox"/>
+                            {% comment %} <label for="someSwitchOptionDefault" class="label-default"></label> {% endcomment %}
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        LED kuning
+                        <div class="material-switch pull-right">
+                            <input  name="led1" type="checkbox"/>
+                            {% comment %} <label for="someSwitchOptionPrimary" class="label-primary"></label> {% endcomment %}
+                        </div>
+                    </li>
+                </ul>
+                <button align="center" type="submit" name="submit" value="Submit">Submit</button>
+            </form>
+            </div>            
+        </div>
+    </div>
+</div>
