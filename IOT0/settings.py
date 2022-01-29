@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'channels'
     
 ]
 
@@ -75,7 +76,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'IOT0.wsgi.application'
-
+ASGI_APPLICATION = "IOT0.asgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -134,3 +135,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SERVER_HOST = 'iot0.herokuapp.com'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+

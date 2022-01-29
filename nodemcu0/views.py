@@ -13,6 +13,12 @@ from .devices import *
 
 # Create your views here.
 
+
+
+def index(request):
+    return render(request, 'chat/index.html')
+
+
 def audit_record(request):
     data = json.loads(request.body)
     ar = data['audit']
