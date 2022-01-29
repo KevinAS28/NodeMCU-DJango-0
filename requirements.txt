@@ -6,4 +6,5 @@ requests
 attrs
 redis
 channels
+channels_redis
 six

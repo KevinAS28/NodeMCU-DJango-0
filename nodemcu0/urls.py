@@ -9,6 +9,8 @@ app_name = 'nodemcu0'
 
 urlpatterns = [ 
     path('', index, name='index'),
+    path('<str:room_name>/', room, name='room'),
+
     path('admin/', admin.site.urls),
     path('audit_record', audit_record),
     path('get_records', get_records),
