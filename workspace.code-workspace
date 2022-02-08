@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../../home/kevin/Arduino/nodemcu_socket"
+		},
+		{
+			"name": "Nodemcu Socket",
+			"path": ".."
+		},
+		{
+			"name": "Nodemcu Socket",
+			"path": "../../../../../../../home/kevin/data/programming/cpp_saya/nodemcu_django_simple/Nodemcu Socket"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.php": "php",
+			"string": "cpp"
+		}
+	}
+}
