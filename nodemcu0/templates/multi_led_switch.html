@@ -23,7 +23,13 @@
 
                 <ul class="list-group">
                     <li class="list-group-item">
-                        Device ID: <input type="text" name="device_id" value="NODMC0"/>
+                        {% comment %} Device ID: <input type="text" name="device_id" value="NODMC0"/> {% endcomment %}
+                        Device ID: 
+                        <select id="device_id" name="device_id">
+                            {% for device_id in device_id_list %}
+                                <option value="{{device_id}}">{{device_id}}</option>
+                            {% endfor %}
+                          </select>    
                     </li>
                 </ul>
                 
@@ -32,14 +38,14 @@
                     <li class="list-group-item">
                         LED merah
                         <div class="material-switch pull-right">
-                            <input  name="led0" type="checkbox"/>
+                            <input  name="led1" type="checkbox"/>
                             {% comment %} <label for="someSwitchOptionDefault" class="label-default"></label> {% endcomment %}
                         </div>
                     </li>
                     <li class="list-group-item">
                         LED kuning
                         <div class="material-switch pull-right">
-                            <input  name="led1" type="checkbox"/>
+                            <input  name="led0" type="checkbox"/>
                             {% comment %} <label for="someSwitchOptionPrimary" class="label-primary"></label> {% endcomment %}
                         </div>
                     </li>

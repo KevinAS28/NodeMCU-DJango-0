@@ -3,5 +3,5 @@ DEVICEID_IP = {
 }
 
 DEVICEID_LED = {
-    'NODMC0': [0, 1]
+    'NODMC0': ["0", "1"]
 }

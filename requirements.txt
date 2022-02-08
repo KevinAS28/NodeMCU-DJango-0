@@ -8,3 +8,5 @@ redis
 channels
 channels_redis
 six
+websocket-client
+websockets

@@ -8,8 +8,8 @@ from nodemcu0.views import *
 app_name = 'nodemcu0'
 
 urlpatterns = [ 
-    path('', index, name='index'),
-    path('<str:room_name>/', room, name='room'),
+    path('', chat_index, name='index'),
+    path('room/<str:room_name>/', chat_room, name='room'),
 
     path('admin/', admin.site.urls),
     path('audit_record', audit_record),

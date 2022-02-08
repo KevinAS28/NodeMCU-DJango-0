@@ -1,0 +1,56 @@
+{
+    "data": {
+        "type": "json_command",
+        "command_arguments": [
+            {
+                "multi_switch_led": {
+                    "LED_switchs":
+                        {
+                            "0": true,
+                            "1": true
+                        }
+                    }
+                }
+        ]
+    },
+    
+    "input_type":   "get_all_connections",
+    "response_type": "bc_spc",
+    "connections_specified":[
+        {
+            "connection_id": 0,
+            "room_name": "send_nodemcu",
+            "room_group_name": "room_group_send_nodemcu",
+            "channel_name": "specific.0f06624a6d0541749e06b4d2cb8920e5!49fc6f193f5a49908dbd390bbd9ee437"
+        }
+    ]
+}
+
+
+{
+    "data": {
+        "type": "json_command",
+        "command_arguments": [
+            {
+                "multi_switch_led": {
+                    "LED_switchs":
+                        {
+                            "0": true,
+                            "1": true
+                        }
+                    }
+                }
+        ]
+    },
+    
+    "input_type":   "get_all_connections",
+    "response_type": "bc_spc",
+    "connections_specified":[
+        {
+            "connection_id": 0,
+            "room_name": "send_nodemcu",
+            "room_group_name": "room_group_send_nodemcu",
+            "channel_name": "specific.0f06624a6d0541749e06b4d2cb8920e5!49fc6f193f5a49908dbd390bbd9ee437"
+        }
+    ]
+}
